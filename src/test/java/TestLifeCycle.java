@@ -23,6 +23,7 @@ public class TestLifeCycle {
     }
 
     @Test
+    @DisplayName("Mój test 1")
     void firstTest() {
         System.out.println("Wykonuje się pierwszy test...");
     }
@@ -30,6 +31,12 @@ public class TestLifeCycle {
     @Test
     void secondTest() {
         System.out.println("Wykonuje się drugi test...");
+    }
+
+    @Test
+    @Disabled
+    void thirdTest() {
+        System.out.println("Wykonuje się trzeci test...");
     }
 
 }
